@@ -13,7 +13,7 @@ function Formulario() {
       return
     } else {
       console.log(cep)
-      axios.get(`http://viacep.com.br/ws/${cep}/json/`)
+      axios.get(`https://viacep.com.br/ws/${cep}/json/`)
         .then(res => {
           console.log(res.data.logradouro)
           console.log(res.data.bairro)
